@@ -22,3 +22,12 @@ python ass1.py
 ```
 You will get the result for ass1
 
+
+for ass2 go in ass2 folder:-
+```
+pip install transformers datasets sacrebleu pandas openpyxl
+```
+
+Then run the  following command :-
+
+
