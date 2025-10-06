@@ -5,13 +5,13 @@ Clone the repo
 ```
 git clone https://github.com/Parv-01/iitptest.git
 ```
-Then open the folder 
+Then open the folder cd iitptest
 run
 ```
 python -m venv venv
 
 .venv\Script\activate
-pip install datasets pandas
+pip install pandas openpyxl transformers evaluate sacrebleu
 ```
 This will isntall all the required lib in virtual env of python named venv
 
@@ -22,12 +22,7 @@ python ass1.py
 ```
 You will get the result for ass1
 
-
 for ass2 go in ass2 folder:-
+```python
+python ass2.py
 ```
-pip install transformers datasets sacrebleu pandas openpyxl
-```
-
-Then run the  following command :-
-
-

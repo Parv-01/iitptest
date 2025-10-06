@@ -1,6 +1,10 @@
 import pandas as pd
-eng=open("C:\\Users\\parva\\PycharmProjects\\PythonProject\\dataset\\eng.txt",encoding="utf-8").read().splitlines()
-hin=open("C:\\Users\\parva\\PycharmProjects\\PythonProject\\dataset\\hin.txt",encoding="utf-8").read().splitlines()
+import os
+script_dir = os.path.dirname(__file__)
+eng_path = os.path.join(script_dir, "dataset", "eng.txt")
+hin_path = os.path.join(script_dir, "dataset", "hin.txt")
+eng = open(eng_path, encoding="utf-8").read().splitlines()
+hin = open(hin_path, encoding="utf-8").read().splitlines()
 df=pd.DataFrame({"English":eng,"Hindi":hin})
 df=df.dropna()
 df["Word_Count_English"]=df["English"].apply(lambda x:len(x.split()))
